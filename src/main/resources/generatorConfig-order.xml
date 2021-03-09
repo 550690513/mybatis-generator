@@ -50,8 +50,8 @@
 		</javaClientGenerator>
 
 		<!-- 单据部分 -->
-		<table tableName="procurement_bill"
-		       domainObjectName="ProcurementBill" mapperName="ProcurementBillMapper"
+		<table tableName="procurement_order"
+		       domainObjectName="ProcurementOrder" mapperName="ProcurementOrderMapper"
 		       enableInsert="true"
 		       enableCountByExample="false" enableUpdateByExample="false" enableDeleteByExample="false"
 		       enableSelectByExample="false" selectByExampleQueryId="false">
@@ -65,7 +65,7 @@
 			<columnOverride column="expect_arrival_time" property="expectArrivalTime" javaType="java.time.Instant"/>
 		</table>
 		<table tableName="procurement_bill_item"
-		       domainObjectName="ProcurementBillItem" mapperName="ProcurementBillItemMapper"
+		       domainObjectName="ProcurementOrderItem" mapperName="ProcurementOrderItemMapper"
 		       enableInsert="true"
 		       enableCountByExample="false" enableUpdateByExample="false" enableDeleteByExample="false"
 		       enableSelectByExample="false" selectByExampleQueryId="false">
