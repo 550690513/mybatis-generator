@@ -10,8 +10,6 @@ public class BaseEntity implements Serializable {
 
     private Long id;
 
-    private String creator;
-    private String operator;
     private Instant createdTime;
     private Instant updatedTime;
 }
