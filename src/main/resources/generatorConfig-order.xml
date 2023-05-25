@@ -31,6 +31,8 @@
                         connectionURL="${db.url}"
                         userId="${db.username}"
                         password="${db.password}">
+            <!-- see: http://mybatis.org/generator/usage/mysql.html -->
+            <property name="nullCatalogMeansCurrent" value="true"/>
         </jdbcConnection>
 
         <javaTypeResolver type="org.mybatis.generator.internal.types.JavaTypeResolverDefaultImpl">
